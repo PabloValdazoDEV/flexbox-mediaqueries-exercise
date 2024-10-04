@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  background-color: #4caf50;
+  align-items: center;
+  color: white;
+  height: 80px;
+}
+nav ul {
+  list-style: none;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  background-color: #f39c12;
+  padding: 20px 0;
+}
+li a {
+  text-decoration: none;
+  color: white;
+  padding: 40px;
+}
+
+main {
+  padding: 40px;
+  display: flex;
+}
+.sidebar{
+    background-color: #ecf0f1;
+    padding: 20px;
+    border: 1px solid grey;
+    flex: 1;
+}
+.main-content{
+    background-color: #e74c3c;
+    padding: 20px;
+    color: white; 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    flex: 2;
+}
+
+.services{
+    background-color: #27ae60;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:10px
+}
+.service-items{
+    display: flex;
+    gap: 20px;
+}
+.service-item{
+    background-color: #2ecc71; 
+    padding: 10px;
+}
+
+
+.testimonials{
+    background-color: #f39c12;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:10px
+}
+.testimonial-items{
+    display: flex;
+    gap: 20px;
+}
+.testimonial-item{
+    background-color: #f1c40f; 
+    padding: 10px;
+}
+.call-to-action{
+    background-color: #3498db;
+    padding: 20px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+.call-to-action a{
+    background-color: #2980b9;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px ;
+}
+
+
+.extra-info{
+    flex: 1;
+    background-color: #8e44ad;
+    padding: 20px;
+    color:white;
+}
+
+
+footer{
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+    padding: 20px 0;
+    color: white;
+}
+
+
+/* Tablet */
+@media ((min-width: 600px) and (max-width: 1024px)) {
+  main {
+    padding: 40px;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+
+}
+
+
+
+
+/* Movil */
+@media (max-width: 600px) {
+  header {
+    font-size: 10px;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: start;
+  }
+  main {
+    padding: 40px;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .service-items, .testimonial-items{
+    flex-direction: column;
+    gap:2px
+}
+
+
+}
